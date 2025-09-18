@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. const nums = [3, 7, 1, 9, 2]; — хэдэн элементтэй вэ?
+
+      // const nums = [3, 7, 1, 9, 2, 9];
+      // console.log(nums.length);
+
+      //   2. const nums = [3, 7, 1, 9, 2]; — эхний болон сүүлийн элементийг ол.
+
+      //   const nums = [3, 7, 1, 9, 2];
+      //   console.log(nums[0], nums[4]);
+
+      //  3. const a = [1, 2]; const b = [3, 4]; — нэг массив болгон нэгтгэ.
+
+      const a = [1, 2];
+      const b = [, 3, 4];
+      console.log(a + b);
+
+      // 4. const nums = [5, 10, 15]; — нийлбэрийг ол.
+
+      //   const nums = [5, 10, 15];
+      //   console.log(nums[0] + nums[1] + nums[2]);
+
+      // 5.  const arr = [12, 3, 19, 5, 7]; — хамгийн их болон хамгийн бага тоог ол.
+
+      //   let arr = [12, 3, 19, 5, 7];
+      //   let max = arr[0];
+      //   let min = arr[0];
+
+      //   for (let i = 0; i <= arr.length - 1; i++) {
+      //     if (max < arr[i]) {
+      //       max = arr[i];
+      //     }
+      //   }
+      //   console.log(max);
+
+      //   for (let i = 0; i <= arr.length - 1; i++) {
+      //     if (min > arr[i]) {
+      //       min = arr[i];
+      //     }
+      //   }
+      //   console.log(min);
+
+      //  6. урвуу дарааллаар харуул.
+
+      //   const letters = ["a", "b", "c", "d"];
+      //   const reverseLetters = letters.slice().reverse();
+      //   console.log(reverseLetters);
+
+      // 7. Давхардсан элементүүдийг арилгаж, зөвхөн нэг нэг ширхэгийг үлдээ.
+
+      //   const nums = [1, 2, 2, 3, 4, 4, 5];
+      //   let newArray = [];
+      //   for (let i = 0; i <= nums.length - 1; i++) {
+      //     if (!newArray.includes(nums[i])) {
+      //       newArray.push(nums[i]);
+      //     }
+      //   }
+      //   console.log(newArray);
+
+      // 8. жижигээс том хүртэл эрэмбэл.
+
+      //   const arr = [8, 3, 6, 1, 9, 2];
+      //   arr.sort();
+      //   console.log(arr);
+
+      // 9. дотроос зөвхөн 18-аас дээш насыг үлдээ.
+
+      //   const ages = [12, 18, 25, 30, 14];
+      //   for (let i = 0; i <= ages.length - 1; i++) {
+      //     if (ages[i] > 18) {
+      //       console.log(ages[i]);
+      //     }
+      //   }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1. 1-ээс 10 хүртэл хэвлэх
+
+      // for (let i = 0; i < 10; i = i + 1) {
+      // console.log("i = ", i);
+      // }
+
+      //2. Print Multiples of 5
+
+      // for (let i = 5; i <= 20; i = i + 5) {
+      // console.log("i = ", i);
+      // }
+
+      // 3. Count Numbers Divisible by 7
+
+      // let h = 0;
+      // for (let i = 1; i <= 50; i++) {
+      //  if (i % 7 == 0) {
+      //  console.log(i);
+      //  h = h + 1;
+      //  }
+      //  }
+      // console.log(h);
+
+      // 4. Print Even Numbers (1 to 20)
+
+      //   for (let i = 1; i <= 20; i++) {
+      //     if (i % 2 == 0) {
+      //       console.log(i);
+      //     }
+      //   }
+
+      // 5. Sum of Numbers (1 to 10)
+
+      // let sum = 0;
+      // for (let i = 1; i <= 10; i++) {
+      //  sum = sum + i;
+      //  }
+      // console.log(sum);
+
+      // 6. Print Numbers with Their Squares
+
+      // let square = 1;
+      // for (let i = 1; i <= 10; i++) {
+      // console.log(i ** 2);
+      // }
+      // console.log(square);
+
+      // 7. Print a Pattern
+
+      // let j = "*";
+      // for (i = 1; i <= 20; i++) {
+      //  j = j + "*";
+      // }
+      // console.log(j);
+
+      // 8. Iterate Through a String
+
+      // let text = "Hello";
+      // for (let i = 0; i < text.length; i++) {
+      //  console.log(text[i]);
+      // }
+
+      // 9. Print Odd Numbers (1 to 20)
+
+      // for (let i = 1; i < 20; i++) {
+      //  if (i % 2 == 1) {
+      //   console.log(i);
+      //  }
+      // }
+
+      // 10. Reverse the Digits of a Number
+      // let result = "";
+      // const number = "456789";
+      // for (let i = 5; i >= 0; i--) {
+      //  result = result + number[i];
+      // }
+      // console.log(result);
+
+      //11. Calculate Factorial
+
+      // let result = 1;
+      // for (let i = 2; i <= 5; i++) {
+      //  result = result * i;
+      // }
+      // console.log(result);
+
+      // 12. Countdown from 10 to 1
+
+      // for (let i = 10; i >= 1; i--) {
+      //  console.log(i);
+      // }
+
+      // 13. Sum Even Numbers (1 to 20)
+      // let sum = 0;
+      // for (let i = 1; i <= 20; i++) {
+      //   if (i % 2 == 0) {
+      //     console.log(i);
+      //   }
+      //   sum += i;
+      // }
+      // console.log(sum);
+
+      // 14. Multiplication Table
+      // const num = 5;
+      // let result = "";
+      // for (let i = 1; i <= 10; i++) {
+      //   result = num * i;
+      //   console.log(result);
+      // }
+
+      // 15. Print a Number Pyramid
+
+      let n = 5;
+      for (let i = 1; i <= n; i++) {
+        let str = "";
+        let count = 1;
+        for (let j = 1; j <= 2 * n; ++j) {
+          if (i + j >= n + 1 && i >= j - n + 1) {
+            str += count.toString() + " ";
+            count++;
+          } else {
+            str += "  ";
+          }
+        }
+
+        console.log(str);
+      }
+    </script>
+  </body>
+</html>

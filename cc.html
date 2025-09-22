@@ -1,0 +1,70 @@
+ 
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Form</title>
+
+        <style>
+          .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        </style>
+      </head>
+      <body>
+        <script>
+          const defaultUsername = "admin";
+          const defaultPassword = "password123";
+
+          const container = document.createElement("div");
+
+          const title = document.createElement("h2");
+          const usernameInput = document.createElement("input");
+          const passwordInput = document.createElement("input");
+          const submitButton = document.createElement("button");
+
+          function handleSubmit() {
+            if (
+              usernameInput.value === defaultUsername &&
+              passwordInput.value === defaultPassword
+            ) {
+              alert("Login successful!");
+            } else {
+              alert("Invalid username or password.");
+            }
+          }
+
+          title.innerHTML = "Login Form";
+
+          usernameInput.placeholder = "Username";
+          passwordInput.placeholder = "Password";
+          submitButton.innerHTML = "Submit";
+          submitButton.onclick = handleSubmit;
+
+          container.classList.add("container");
+          container.appendChild(title);
+          container.appendChild(usernameInput);
+          container.appendChild(passwordInput);
+          container.appendChild(submitButton);
+
+          document.body.appendChild(container);
+        </script>
+      </body>
+    </html>
+
+    <!-- DOM selectors ("id", "name", "class", "querySelector") -->
+    <!-- DOM create element -->
+    <!-- DOM appendChild -->
+    <!-- DOM modify element -->
+    <!-- onclick -->
+  </body>
+</html>

@@ -22,12 +22,23 @@ buttons.forEach((button) => {
   });
 });
 
-function jumpscare() {
-  document.getElementById("jumpscare").style.visibility = "visible";
-}
-setTimeout(Timer, 3000);
+var aud = document.getElementById("ASong").children[0];
+var isPlaying = false;
+aud.pause();
 
-document.getElementById("jumpscare").style.display = "block";
-setTimeout(function () {
-  document.getElementById("jumpscare").style.display = "none";
-}, 3000);
+function playPause() {
+  if (isPlaying) {
+    aud.pause();
+  } else {
+    aud.play();
+  }
+  isPlaying = !isPlaying;
+
+  const audio = document.getElementById("ASong");
+  const playDuration = 5000;
+  audio.currentTime = 0;
+  audio.play();
+  setTimeout(() => {
+    audio.pause();
+  }, playDuration);
+}

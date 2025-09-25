@@ -86,12 +86,13 @@ button:hover {
   color: #fff;
 }
 
-#jumpscare {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+#myAudio {
   width: 100%;
-  height: 100%;
+  margin-top: 20px;
+}
+.custom-play-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
   cursor: pointer;
-  visibility: hidden;
 }
